@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gallery</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    <link rel="stylesheet" href="../assets/style.css">
+</head>
+<body id="gallery-page">
+    <nav class="nav-bar">
+        <button type="button"><a href="../index.html">Home</a></button>
+        <button type="button"><a href="projects.html">Projects</a></button>
+        <button type="button"><a href="interests.html">About me</a></button>
+        <button type="button"><a href="gallery.html">Gallery</a></button>
+        <button type="button"><a href="contact.html">Contacts</a></button>
+    </nav>
+    <div class="ghero hero" style="margin-bottom: 5vh;">
+        <h2>Gallery</h2>
+        <div class="bttn-container">  
+            <button onclick="showHidePhotographs()">Show Photos</button>
+            <button onclick="showHideDrawings()">Show Drawings</button>    
+        </div>
+    </div>
+    
+    <div id ="imgs1" class="images-container" style="display: none;">
+    <div class="column-images">
+        <a href="../assets/imgs/gallery/avocado toast.jpg" target="_blank">
+            <img class="resizable-img"src="../assets/imgs/gallery/avocado toast.jpg" alt="" >
+        </a>
+        <a href="../assets/imgs/gallery/building at sunset.jpeg" target="_blank">
+            <img src="../assets/imgs/gallery/building at sunset.jpeg" alt="">
+        </a>
+        <a href="../assets/imgs/gallery/sunrise sea.jpeg" target="_blank">
+            <img src="../assets/imgs/gallery/sunrise sea.jpeg" alt="">
+        </a>
+        <a href="../assets/imgs/gallery/pink rose.png" target="_blank">
+            <img src="../assets/imgs/gallery/pink rose.png" alt="">
+         </a>
+        <a href="../assets/imgs/gallery/aesthetic food caravan.jpg" target="_blank">
+            <img src="../assets/imgs/gallery/aesthetic food caravan.jpg" alt="">
+         </a>
+        <a href="../assets/imgs/gallery/plant red dark.png" target="_blank">
+            <img src="../assets/imgs/gallery/plant red dark.png" alt="">
+        </a>
+        <a href="../assets/imgs/gallery/night moon plant.jpg" target="_blank">
+            <img src="../assets/imgs/gallery/night moon plant.jpg" alt="" target="_blank">
+        </a>
+        <a href="../assets/imgs/gallery/window.jpeg" target="_blank">
+            <img src="../assets/imgs/gallery/window.jpeg" alt="">
+        </a>
+    </div>
+    <div class="column-images">
+        <a href="../assets/imgs/gallery/person at sunrise sea.png" target="_blank">
+            <img src="../assets/imgs/gallery/person at sunrise sea.png" alt="" >
+        </a>
+        <a href="../assets/imgs/gallery/aesthetic building.png" target="_blank">
+            <img src="../assets/imgs/gallery/aesthetic building.png" alt="">
+        </a>
+        <a href="../assets/imgs/gallery/voyage.png" target="_blank">
+            <img src="../assets/imgs/gallery/voyage.png" alt="">
+        </a>
+        <a href="../assets/imgs/gallery/forest sun.png" target="_blank">
+            <img src="../assets/imgs/gallery/forest sun.png" alt=""> 
+        </a>
+        <a href="../assets/imgs/gallery/village view.png" target="_blank">
+            <img src="../assets/imgs/gallery/village view.png" alt=""> 
+        </a> 
+        <a href="../assets/imgs/gallery/dark leaf.png" target="_blank">
+            <img src="../assets/imgs/gallery/dark leaf.png" alt=""> 
+        </a>
+        <a href="../assets/imgs/gallery/IMG_20190726_053742.jpg" target="_blank">
+            <img src="../assets/imgs/gallery/IMG_20190726_053742.jpg" alt="">
+        </a>
+        <a href="../assets/imgs/gallery/pink sky.png" target="_blank">
+            <img src="../assets/imgs/gallery/pink sky.png" alt="">
+        </a>
+    </div>
+    </div>
+
+    <div id ="drawings" class="images-container" style="display: none;">
+        <div class="column-images">
+            <a href="../assets/imgs/dr.jpg" target="_blank">
+                <img class="resizable-img"src="../assets/imgs/dr.jpg" alt="" >
+            </a>
+            <a href="../assets/imgs/dr5.jpg" target="_blank">
+                <img class="resizable-img"src="../assets/imgs/dr3.jpg" alt="" >
+            </a>
+            <a href="../assets/imgs/dr3.jpg" target="_blank">
+                <img class="resizable-img"src="../assets/imgs/dr5.jpg" alt="" >
+            </a>
+        </div>
+        <div class="column-images">
+            <a href="../assets/imgs/dr2.jpg" target="_blank">
+                <img class="resizable-img"src="../assets/imgs/dr2.jpg" alt="" >
+            </a>
+            <a href="../assets/imgs/dr4.jpg" target="_blank">
+                <img class="resizable-img"src="../assets/imgs/dr4.jpg" alt="" >
+            </a>
+            <a href="../assets/imgs/dr6.jpg" target="_blank">
+                <img class="resizable-img"src="../assets/imgs/dr6.jpg" alt="" >
+            </a>
+        </div>
+    </div>
+
+    <script>
+        function showHidePhotographs()
+        {
+        var x = document.getElementById("imgs1");
+        var y = document.getElementById("drawings");
+        if (x.style.display === "none") 
+        {
+            x.style.display = "";
+            y.style.display = "none";
+        } 
+        else 
+        {
+            x.style.display = "none";
+        }
+        }
+     </script>
+
+    <script>
+        function showHideDrawings()
+        {
+        var x = document.getElementById("drawings");
+        var y = document.getElementById("imgs1");
+        if (x.style.display === "none") 
+        {
+            x.style.display = "";
+            y.style.display = "none"
+        } 
+        else 
+        {
+            x.style.display = "none";
+        }
+        }
+    </script>
+    <h4 style="margin-top: 10vh;text-align: center;">These images are copywrighted.</h4>
+    <footer>
+        <div class="container">
+            <h4>Portfolio, Ayhan Hasanov</h4>
+            <div class="nav"><button type="button"><a href="../index.html">Home</a></button>
+                <button type="button"><a href="projects.html">Projects</a></button>
+                <button type="button"><a href="interests.html">About me</a></button>
+                <button type="button"><a href="gallery.html">Gallery</a></button>
+                <button type="button"><a href="contact.html">Contacts</a></button>
+            </div>
+            </div>
+        <p>All rights reserved. Contact at <b>ayhan.hsn.01@gmail.com</b></p>
+    </footer>
+</body>
+</html>

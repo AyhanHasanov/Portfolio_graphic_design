@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    <link rel="stylesheet" href="../assets/style.css">
+
+ 
+</head>
+<body id="interests-page">
+    <nav class="nav-bar">
+        <button type="button"><a href="../index.html">Home</a></button>
+        <button type="button"><a href="projects.html">Projects</a></button>
+        <button type="button"><a href="interests.html">About me</a></button>
+        <button type="button"><a href="gallery.html">Gallery</a></button>
+        <button type="button"><a href="contact.html">Contacts</a></button>
+    </nav>
+
+    <div class="hero">
+      <h2>About me</h2>
+    </div>
+
+    <div class="about-me">
+      <img src="../assets/imgs/avatar.jpg" alt="">
+      <p>Hi there! Name's Ayhan Hasanov - an 18 year old first-year student at the Paisiy Hilendarski University in Plovdiv. 
+        who vivivdly aims at discovering the boundless world of graphic design and content creation.
+        For several years now I have been improving my skills with Photoshop, Illustator and front-end (only HTML and CSS for now). <br>
+        </p>
+    </div>
+
+    <div class="hero">
+      <h2>Interests and hobbies</h2>
+    </div>
+    
+    <div class="parent-container">
+
+      <div class="card hobby">
+        <img class="round-image" src="../assets/imgs/pexels-markus-spiske-2004161.jpg" alt="" >
+        <h3>Programming</h3>
+        <p>Bits and bytes, ones and zeroes. It's all about the creation of content using... Well, you know - code!</p>
+      </div>
+
+      <div class="card hobby">
+        <img class="round-image" src="https://images.pexels.com/photos/2324808/pexels-photo-2324808.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1" alt="" >
+        <h3>Arts</h3>
+        <p>Any type of art indeed - sketching, reading, listening to music or simply admiring works of art.</p>
+      </div>
+
+      <div class="card hobby">
+        <img class="round-image" src="https://images.pexels.com/photos/821749/pexels-photo-821749.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1" alt="" >
+        <h3>Photography</h3>
+        <p>Not a professional, just a regular bloke who enjoys taking photographs a bit too much sometimes.</p>
+      </div>
+      
+      <div class="card interest">
+        <img class="round-image" src="https://images.unsplash.com/photo-1632488507942-b638eecc151a?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1yZWxhdGVkfDl8fHxlbnwwfHx8fA%3D%3D&auto=format&fit=crop&w=500&q=60" alt="" >
+        <h3>Graphic design</h3>
+        <p>Photo manipulation, posters, vector images, logos, you name it - pass it over here!</p>
+      </div>
+
+      <div class="card interest">
+        <img class="round-image" src="../assets/imgs/331322971_1347255039394517_1718133595260057894_n.jpg" alt="" >
+        <h3>Fashion</h3>
+        <p>Whatever one might say about appearances, sometimes it's all about the looks.</p>
+      </div>
+
+      <div class="card interest">
+        <img class="round-image" src="https://images.pexels.com/photos/1566867/pexels-photo-1566867.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1" alt="" >
+        <h3>Cooking</h3>
+        <p>Food isn't about survival anymore. It's about creating beutiful and tasteful dishes as well as eating!</p>
+      </div>
+    </div>
+
+    <script>
+      function myFunction()
+      {
+        var x = document.getElementById("myDIV");
+        if (x.style.display === "none") 
+        {
+          x.style.display = "block";
+        } 
+        else 
+        {
+          x.style.display = "none";
+        }
+      }
+    </script>
+
+    <script>
+      function myFunction2()
+      {
+        var header = document.getElementById("myDIV");
+      var btns = header.getElementsByClassName("btn");
+      for (var i = 0; i < btns.length; i++) {
+        btns[i].addEventListener("click", function() {
+        var current = document.getElementsByClassName("active");
+        current[0].className = current[0].className.replace(" active", "");
+        this.className += " active";
+        });
+      }
+      }
+    </script>
+
+    <footer>
+      <div class="container">
+          <h4>Portfolio, Ayhan Hasanov</h4>
+          <div class="nav"><button type="button"><a href="../index.html">Home</a></button>
+              <button type="button"><a href="projects.html">Projects</a></button>
+              <button type="button"><a href="interests.html">About me</a></button>
+              <button type="button"><a href="gallery.html">Gallery</a></button>
+              <button type="button"><a href="contact.html">Contacts</a></button>
+          </div>
+          </div>
+      <p>All rights reserved. Contact at <b>ayhan.hsn.01@gmail.com</b></p>
+  </footer>
+</body>
+</html>
